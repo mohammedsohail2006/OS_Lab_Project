@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>CPU Scheduling Simulator</h1>
+
+<input type="number" id="n" placeholder="Enter number of processes">
+<button onclick="generateInputs()">Enter Details</button>
+
+<div id="inputs"></div>
+
+<br>
+
+<select id="algo">
+    <option value="fcfs">FCFS</option>
+    <option value="sjf">SJF</option>
+    <option value="rr">Round Robin</option>
+</select>
+
+<input type="number" id="tq" placeholder="Time Quantum">
+
+<button onclick="calculate()">Run</button>
+
+<h2>Output</h2>
+<pre id="output"></pre>
+
+<h2>Gantt Chart</h2>
+<div id="gantt"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
